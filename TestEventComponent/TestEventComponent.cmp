@@ -1,0 +1,10 @@
+<aura:component description="TestEventComponent"
+                implements="flexipage:availableForAllPageTypes"
+                access="global">
+        <aura:registerEvent name="appEvent" type="c:TestApplicationEvent"/>
+        <h1>Test Application Event</h1>
+        <p><lightning:button
+                    label="Fire an application event"
+                    onclick="{!c.fireApplicationEvent}" />
+        </p>
+</aura:component>

@@ -1,0 +1,11 @@
+<aura:component description="TestHandlerComponent"
+                implements="flexipage:availableForAllPageTypes"
+                access="global">
+    <aura:attribute name="messageFromEvent" type="String"/>
+    <aura:attribute name="numEvents" type="Integer" default="0"/>
+
+    <aura:handler event="c:TestApplicationEvent" action="{!c.handleApplicationEvent}"/>
+
+    <p>{!v.messageFromEvent}</p>
+    <p>Number of events: {!v.numEvents}</p>
+</aura:component>
