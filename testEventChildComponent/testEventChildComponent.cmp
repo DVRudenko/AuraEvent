@@ -1,0 +1,10 @@
+<aura:component description="testEventChildComponent"
+                implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId, force:lightningQuickAction"
+                access="global">
+    <aura:registerEvent name="cmpEvent" type="c:ComponentEvent"/>
+    <h2>PDP Child Component Event</h2>
+    <p><lightning:button
+                label="Fire a component event"
+                onclick="{!c.fireComponentEvent}" />
+    </p>
+</aura:component>
